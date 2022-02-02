@@ -90,6 +90,9 @@
     1px 1px 1px #000; 
   }
 
+  Button text {
+    buttontext-color:grey;
+
   body {
     /*background-image:  url('images/informatik.jpg');*/
     background-color: black;
