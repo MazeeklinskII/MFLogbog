@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kaj Børges Logbog</title>
+        <title>CUm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css"></link>
     </head>
+
+    <!-- Banner HTML -->
+    <div class="banner">
+        <h1>Et tu, Brute?</h1>
+    </div>
+
     <body>
         <!-- Navigation bar HTML -->
         <div class="topnav" id="myTopnav">
-            <a href="index.html">Kaj Børge</a>
-            <a href="informatik.html" class="active">INF</a>
-            <a href="matematik.html">MAT</a>
-            <a href="dansk.html">DAN</a>
-            <a href="engelsk.html">ENG</a>
-            <a href="dotdotdot.html">...</a>
-            <a href="so.html">SO</a>
+            <a href="index.html" >Carsten</a>
+            <a href="informatik.html">Informatiske Noter</a>
+            <a href="Projekter.html">Fucking Projekter</a>
+            <div class="dropdown">
+                <button class="dropbtn">SO</button>
+                <div class="dropdown-content">
+                    <a href="so.html" class="active">SO1</a>
+                    <a href="so2.html">#SO2</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Programmering</button>
+                <div class="dropdown-content">
+                    <a href="HTML.html">HTML</a>
+                    <a href="Python.html">Python</a>
+                    <a href="JS.html">Javascript</a>
+                    <a href="CSS.html">CSS</a>
+                </div>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -24,20 +42,15 @@
         <!-- Accordion HTML -->
         <div class="content" id="so">
             <div class="element left">
-                <h2>SO Noter</h2>
-                <button class="accordion">Section 1</button>
+                <h2>SO Noter & Opgaver</h2>
+                <button class="accordion">SO1</button>
                 <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <img src="images/smukt-billede.png" width=20 height=30>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum</p>
                 </div>
 
                 <button class="accordion">Section 2</button>
                 <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum </p>
                 </div>
             </div>
 <!--

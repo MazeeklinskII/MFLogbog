@@ -7,14 +7,35 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css"></link>
     </head>
+
+    <!-- Banner HTML -->
+    <div class="banner">
+        <h1>... But the people are retarded.</h1>
+        <font-color></font-color>
+    </div>
+
     <body>
         <!-- Navigation bar HTML -->
         <div class="topnav" id="myTopnav">
             <a href="index.html">Carsten</a>
             <a href="informatik.html" class="active">Informatiske Noter</a>
             <a href="Projekter.html">Fucking Projekter</a>
-            <a href="so.html">SO</a>
-            <a href="Images.html">Lewd Picures</a>
+            <div class="dropdown">
+                <button class="dropbtn">SO</button>
+                <div class="dropdown-content">
+                    <a href="so.html">SO1</a>
+                    <a href="so2.html">#SO2</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Programmering</button>
+                <div class="dropdown-content">
+                    <a href="HTML.html">HTML</a>
+                    <a href="Python.html">Python</a>
+                    <a href="JS.html">Javascript</a>
+                    <a href="CSS.html">CSS</a>
+                </div>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -24,7 +45,7 @@
         <div class="content" id="informatik">
             <div class="element left">
                 <h2>Informatik Noter</h2>
-                <button class="accordion">Mass survaillance</button>
+                <button class="accordion">Mass surveillance</button>
                 <div class="panel">
                 <p>Vi snakkede om hvordan man overvåger befolkningnen i alle til næsten alle lande, og hvordan det påvirker folk<br><br>lektierne til dette forløb var:<br>   - <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo"> Mass surveillance </a>
                    <br><br> - surveillance capitalism: <a href="https://medium.com/swlh/what-is-surveillance-capitalism-bd7c24d8ddba">medium.com - What is survaillance capitalism</a> og <a href="https://www.youtube.com/watch?v=hIXhnWUmMvw">Youtube video</a> </p>
@@ -32,12 +53,33 @@
 
                 <button class="accordion">Internet Addiction</button>
                 <div class="panel">
-                <p>Internet addiction, det er en addiction der kan degradere din mentale proccesorer, i en så fald, at mange der har denne "<a href="https://kashmirobserver.net/2020/09/21/addiction-an-overused-word/">addiction</a>", vi to en test, der skulle vise hvor vidt vi havde sandsynelighed for indebæreskab af denne addiction.<br><br>Til dette forløb brugte vi:<a href="https://www.mind-diagnostics.org/internet_addiction-test">Internet addiction-test</a></p>
+                <p>Internet addiction, det er en addiction der kan degradere din mentale proccesorer, i en så fald, at mange der har denne "<a href="https://kashmirobserver.net/2020/09/21/addiction-an-overused-word/">addiction</a>", vi to en test, der skulle vise hvor vidt vi havde sandsynelighed for indebæreskab af denne addiction.<br><br>Til dette forløb brugte vi: <a href="https://www.mind-diagnostics.org/internet_addiction-test">Internet addiction-test</a></p>
                 </div>
 
-                <button class="accordion">Internet security</button>
+                <button class="accordion">Cybersikkerhed og verificering</button>
                 <div class="panel">
-                <p>Til dette forløb snakkede vi, om forskellige former datebrud, herunder er der noter, som er skrevet i OneNote, den eneste grund til, at jeg skriver det, er fordi jeg er for doven til at CopyPaste hele lortet ind i min fil herpå</p>
+                <h4>De tre typer for verificering:</h4>
+                    <ol>
+                        <li>Viden (Noget man ved) - dette kan være et password, ulempen med denne metode er, at det kan blive lært til andre, som så kan verificere sig selv som dig.</li>
+                        <li>Objektiferet (noget man har) - dette kan være en nøgle eller et sikkerhedskort. ulempe - kan blive stjålet</li>
+                        <li>Biometrisk (noget man er) - eksempel: fingeraftryk, iris, hjernescan - ulempen, mister din adgang er du fucked</li>
+                    </ol> 
+                <h4>Multi-faktor-verificering:</h4>
+                <p>Verificering med mere end én metode for verificering - Eksempel: engangskoder</p>
+                <h4>Trusselsmodellen</h4>
+                    <ul>
+                        <li>Anti-fænomen?</li>
+                        <li>Beksyttelsesværdi genstand?</li>
+                        <li>Planen?</li>
+                        <li>Modstanders midler?</li>
+                    </ul>
+                <img src="images/batman-threat-model-1200-800x535.png">
+                <h4>LRE privilegierne:</h4>
+                    <ol>
+                        <li>Læs - hvad må læses?</li>
+                        <li>Rediger - hvad må foreslås?</li>
+                        <li>Eksekver - hvad må ændres?</li>
+                    </ol>    
                 </div>
 
                 <button class="accordion">Vira og bakterier</button>
@@ -54,9 +96,9 @@
                         <dt>Repetition</dt>
                         <dd>Stilarten skal gerne være gengående på din hjemmeside, som f.eks. farver og former.</dd>
                         <dt>Contrast</dt>
-                        <dd>Hjemmesiden skal gerne ikke være for ensartet en smule kontrast i både farver og figurer</dd>
+                        <dd></dd>
                         <dt>Hierarchy</dt>
-                        <dd>Det vigtigeste kommer først</dd>
+                        <dd></dd>
                         <dt>Balance - Symmetry</dt>
                         <dd></dd>
                         <dt>Balance - Tension</dt>
@@ -85,7 +127,7 @@
             </div>
                 <button class="accordion">CRUD</button>
                 <div class="panel">
-                <img id="profile-picture" src="CRUD_header.png">
+                <img src="CRUD header.png">
                 <p>CRUD står for Create, Read, update, and delete. Disse er de fire basiske operationer/aktioner inden for computer programmering, og bliver brugt til, at beskrive user interface. CRUD fungere lidt ligesom spiralmodellen, du bliver ved og ved indtil lortet virker. Der er andre akronymer som minder om CRUD:</p>
                 <ul>
                     <li>CRUDL - Create, read, update, delete, list</li>
@@ -94,6 +136,12 @@
                     <li>CRAP - Create, replicate, append, process</li>
                 </ul> 
             </div>
+
+                <button class="accordion">DOM</button>
+                <div class="panel">
+                <p>DOM (Document Object Model) er et hierarkisk system der søger for, at visse strukture kommer for andre i form af kode</p>
+                <img src="images/DOM.png">
+                </div>
 <!--
     
     <label for="course">[insert completion here]:</label>
