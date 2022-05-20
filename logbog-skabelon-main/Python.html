@@ -8,11 +8,20 @@
         <link rel="stylesheet" href="style.css"></link>
     </head>
 
+    <style>
+        .accordion {
+           background-color: lightgray;
+           color: white;
+           text-align: left;
+           padding: 20px;
+           border-radius: 15px;
+        }
+   </style>
+
     <!-- Banner HTML -->
     <div class="banner">
         <h1>God is dead</h1>
     </div>
-
 
     <body>
         <!-- Navigation bar HTML -->
@@ -23,7 +32,6 @@
             <div class="dropdown">
                 <button class="dropbtn">Programmering</button>
                 <div class="dropdown-content">
-                    <a href="HTML.html">HTML</a>
                     <a href="Python.html" class="active">Python</a>
                     <a href="JS.html">Javascript</a>
                     <a href="CSS.html">CSS</a>
@@ -49,11 +57,6 @@
                 <p>Python er et programmeringsprog, der bruges på en server til at lave webbrowser-programmer</p>
                 </div>
 
-                <button class="accordion">Syntax</button>
-                <div class="panel">
-                <p></p>
-                </div>
-
                 <button class="accordion">Comments</button>
                 <div class="panel">
                 <p>For at lave en kommentar i sin kode <!-- som for eksempel det her --> skal man lave et #, det sørger for, at det du skrive inden for den kommentar bliver gemt i din kode, og bliver ikke vist i dit program.</p>
@@ -70,94 +73,78 @@
 
                 <button class="accordion">Data typer</button>
                 <div class="panel">
-                <p>lorem ipsum</p>
+                <p>I general programmering bruger man foskellige former for data, de mest kendte er string, float, boolean og integer. der er mange andre f.eks. Complex, list, dict osv.
+                <br>De fleste programmeringsprog bruge den samme pakke af data typer, der er dog nogen der har sine helt egne specielle.
+                <br>Og selvom de fleste sprog har de samme data typer, så skrives de anderledes, i python skrives de sådan her:</p>
+                <img src="images/Eksempel-billeder/Python-Datatyper.png" width="400px" height="350">
                 </div>
 
-                <button class="accordion">Booleans</button>
+                <button class="accordion">Data typer - Booleans</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Boolean er en data type, som kan determinere om noget er sandt eller falsk</p>
                 </div>
 
-                <button class="accordion">Strings</button>
+                <button class="accordion">Data typer - Strings</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Strings er den data type, som kan determinere ord som variabler</p>
                 </div>
 
-                <button class="accordion">Numbers</button>
+                <button class="accordion">Data typer - Numbers</button>
                 <div class="panel">
-                <p>lorem ipsum</p>
-                </div>
-
-                <button class="accordion">Casting</button>
-                <div class="panel">
-                <p>lorem ipsum</p>
+                <p>Numbers er den data type, der omhandler numre (DUH!), men der er tre forskellige måder man kan skirve den på; der er <strong>interger, float</strong> &  <strong>complex</strong>. De ser sådan her ud:</p>
+                <img src="images/Eksempel-billeder/Python-numbers.png">
                 </div>
 
                 <button class="accordion">Lister</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Du bruger lists til at have flere variabler under samme navn, de skrives sådan her:</p>
+                <img src="images/Eksempel-billeder/Python-lists.png">
                 </div>
 
                 <button class="accordion">Dictionaries</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Dictionaries bruges til at give flere værdier til forskellige key:value par indeni en variable. At skrive dem ser sådan her ud:</p>
+                <img src="images/Eksempel-billeder/Python-dictionaries.png">    
                 </div>
 
                 <button class="accordion">if...Else</button>
                 <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">While/for loops</button>
-                <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Funktioner</button>
-                <div class="panel">
-                <p>monkey</p>
+                <p>if...Else funktionen bruges til, at give flere kommandoer til en situation, og ud fra værdien af situationen bestemmer man hvilken aktion der skal tages som den næste</p>
+                <ul>
+                    <li>Equals: <strong>a == b</strong></li>
+                    <li>Not Equeals: <strong>a != b</strong></li>
+                    <li>Less than: <strong>a < b</strong></li>
+                    <li>Less than or Equal to: <strong>a <= b</strong></li>
+                    <li>Greater than: <strong>a > b</strong></li>
+                    <li>Greater than or Equal to: <strong>a >= b</strong></li>
+                </ul>
+                <p>Et eksempel på at if...Else funktionen kommer i brug ville være:</p>
+                <img src="images/Eksempel-billeder/Python-elif.png">
                 </div>
 
                 <button class="accordion">Arrays</button>
                 <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Classes/object</button>
-                <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Databaser</button>
-                <div class="panel">
-                <p>monkey</p>
+                <p>Arrays er en form for variable-system, hvor i du kan have flere variabler til den samme, de kan lave en samling af værdier indenfor den samme variable med forskellige tal vha: *variable_navn*[n]</p>
+                <img src="images/Eksempel-billeder/Python-arrays.png">
                 </div>
 
                 <button class="accordion">User input</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Python er en af de eneste programmeringsprog (kendte), der understøtter user-input, hvilket er en måde for brugeren af programmet kan for lov til direkte at hjælpe kommandoen til slut.
+                <br>Python 3.6 og Python 2.7 bruger to forskellige måde at give user-input til programmet. Python 3.6 bruger <strong>input()</strong>, mens Python 2.7 bruger <strong>raw_input()</strong></p>
+                <img src="images/Eksempel-billeder/Python-python2_7UserInput.png">
+                <img src="images/Eksempel-billeder/Python-python3_6UserInput.png">
                 </div>
 
                 <!-- Matematisk Python -->
-                <h2>Matematik</h2>
                 <button class="accordion">Matplotlib</button>
                 <div class="panel">
-                <p>monkey</p>
-                </div>
-                
-                <button class="accordion">Math</button>
-                <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Lambda</button>
-                <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Operator</button>
-                <div class="panel">
-                <p>monkey</p>
+                <p>Matplotlib er en graf-plotter på lavt niveau, som bruges som en visualitionsmager.
+                <br>Den installeres ved hjælp kommandoprompt'en, derefter skal man inddrave den til sit program vha <strong>import matplotlib</strong> indeni sin IDE.
+                <br>Man kan plotte pis med den koden, som ser sådan her ud.</p>       
+                <img src="images/Eksempel-billeder/Python-MatplotlibPyplot.png">
+                <p>Resulatet du får for dette lille stykke kode er:</p>
+                <img src="images/Eksempel-billeder/Python-MatplotlibPyplot-Graph.png">
                 </div>
     </div>
     <script src="script.js"></script>

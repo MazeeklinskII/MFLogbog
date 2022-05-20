@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="style.css"></link>
     </head>
 
+    <style>
+        .accordion {
+           background-color: lightgray;
+           color: white;
+           text-align: left;
+           padding: 20px;
+           border-radius: 15px;
+        }
+   </style>
+
     <!-- Banner HTML -->
     <div class="banner">
         <h1>Everyone was a slave to something.</h1>
@@ -22,7 +32,6 @@
             <div class="dropdown">
                 <button class="dropbtn">Programmering</button>
                 <div class="dropdown-content">
-                    <a href="HTML.html">HTML</a>
                     <a href="Python.html">Python</a>
                     <a href="JS.html" class="active">Javascript</a>
                     <a href="CSS.html">CSS</a>
@@ -38,8 +47,60 @@
             <div class="element left">
                 <h2>JavaScript</h2>
                 <h4>Denne notatside er lavet ved sammensætning af viden fra både pensum og selvlære</h4>
-                <button class="accordion">Mass surveillance</button>
+                <button class="accordion">JS i HTML</button>
                 <div class="panel">
-                <p>Vi snakkede om hvordan man overvåger befolkningnen i alle til næsten alle lande, og hvordan det påvirker folk<br><br>lektierne til dette forløb var:<br>   - <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo"> Mass surveillance </a>
-                   <br><br> - surveillance capitalism: <a href="https://medium.com/swlh/what-is-surveillance-capitalism-bd7c24d8ddba">medium.com - What is survaillance capitalism</a> og <a href="https://www.youtube.com/watch?v=hIXhnWUmMvw">Youtube video</a> </p>
+                <p>For at skrive et stykke kode til skal du bruge <!-- <script> --> (se i koden)</p>
                 </div>
+
+                <button class="accordion">Comments</button>
+                <div class="panel">
+                <p>Kommentarer skrives med <strong>//</strong> og har ingen slutning, hvilket betyder at du skal skrive dem i starten af hver statement du vil ræmme ud.</p>
+                </div>
+
+                <button class="accordion">Variables</button>
+                <div class="panel">
+                <p>Der er tre forskellige måder at definere hvad der er variabler, der er:</p>
+                <ul>
+                    <li style="color: brown;"><strong></strong></li>
+                    <li style="color: brown;"><strong>let</strong></li>
+                    <li style="color: brown;"><strong>const</strong></li>
+                </ul>
+                </div>
+
+                <button class="accordion">Let</button>
+                <div class="panel">
+                <p><strong style="color: brown;">let</strong> kan kun blive assigned til en variable af gangen, du kan ikke have <strong style="color: brown">let</strong> til to variabler på sammentid.</p>
+                </div>
+
+                <button class="accordion">Const</button>
+                <div class="panel">
+                <p><strong style="color:brown">Const</strong> står for Constant og er lader dig give en variable en konstant værdi, som giver fejlkoder hvis ikke brugt på den rigtige måde.</p>
+                </div>
+
+                <button class="accordion">operatorer</button>
+                <div class="panel">
+                <p>I JavaScript bruger de næsten de samme operatorer som man gør i almen matematik, dog ser JS' operatorer sådan her ud:</p>¨
+                <img src="images/Eksempel-billeder/JS-Operators.png">
+                </div>
+
+                <button class="accordion">Assignment</button>
+                <div class="panel">
+                <p>En Assignment i JS er lidt det samme som et problem i matematik, du skal lægge to ting sammen og få et produkt ud af det. Til Assignments er der et helt sæt af operatorer:</p>
+                <img src="images/Eksempel-billeder/JS-OperatorsAssignment.png">
+                </div>
+
+                <button class="accordion">Datatyper</button>
+                <div class="panel">
+                <p>I JS er der mange Datatyper, de tre mest brugte er <strong>number</strong>, <strong>String</strong> og <strong>object</strong>, og de opføre sig sådan her:</p>
+                <img src="images/Eksempel-billeder/JS-Datatyper.png">
+                </div>
+
+                <button class="accordion">Arrays</button>
+                <div class="panel">
+                <p>Et Array samler variabler under samme navn, så f.eks. en samling af dildoer bliver til dildo1, dildo2, dildo3 osv, skrivemåden er:</p>
+                <img src="images/Eksempel-billeder/JS-Array.png">
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+        </html>

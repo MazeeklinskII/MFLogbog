@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="style.css"></link>
     </head>
 
+    <style>
+        .accordion {
+           background-color: lightgray;
+           color: white;
+           text-align: left;
+           padding: 20px;
+           border-radius: 15px;
+        }
+   </style>
+
     <!-- Banner HTML -->
     <div class="banner">
         <h1>Nothing ever goes as planned in this accursed world.</h1>
@@ -23,7 +33,6 @@
             <div class="dropdown">
                 <button class="dropbtn">Programmering</button>
                 <div class="dropdown-content">
-                    <a href="HTML.html">HTML</a>
                     <a href="Python.html">Python</a>
                     <a href="JS.html">Javascript</a>
                     <a href="CSS.html" class="active">CSS</a>
@@ -42,108 +51,66 @@
                 <button class="accordion">Syntaks</button>
                 <div class="panel">
                 <p>Syntaks for tekst er hvordan hele lortet hænger sammen i en komposition / fuld kommando</p>
-                <br><img src="images/CSS-syntaks.png">
+                <br><img src="images/Eksempel-billeder/CSS-syntaks.png">
                 </div>
 
                 <button class="accordion">Selectors</button>
                 <div class="panel">
-                <p>monkey</p>
+                <p>Man bruger selectors til, at skabe <strong>id</strong>'s, med et ID kan du lave særlig betingelser for en bestemt kode i dit program.</p>
+                <p>For at lave en selctor bruger du et <strong>#</strong></p>
+                <img src="images/Eksempel-billeder/CSS-selectors.png">
                 </div>
 
                 <button class="accordion">farver</button>
                 <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Borders & Margin</button>
-                <div class="panel">
-                <p>Din mor er en lorteluder</p>
-                </div>
-                
-                <button class="accordion">Størrelser</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">"a" links</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Display</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Overflow</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Inline value</button>
-                <div class="panel">
-                <p>monkey</p>    
+                <p>Farver kan beskrives på mange måder, hvis ikke du kender værdierne på de farver du skal bruge, kan du godt bare skrive dets navn, denne metode har 140 valgmuligheder , men med numre kan du beskrive helt præcis hvordan du vil have din farve til at se ud. Talene kan skrive med mange forskellige systemer, du kan skrive dem i RGB, RGBA, Hexadecimaler, og andre. Her er skrive måderne:</p>
+                <ul>
+                    <li><strong>RGB</strong> - rgb(r, g, b), r er mængden af rød (Red), g er mængden af grøn, b er mængden af blå (Blue)</li>
+                    <li><strong>HEX</strong> - #xxyyyy, x er et bogstav og y er et tal</li>
+                    <li><strong>RGBA</strong> - rgba(x, y, z, a) samme som RGB bare med accent (eller opacity)</li>
+                    <li><strong>HSL</strong> - hsl(hue, saturation, lightness), hue er farven beskrevet med 360 grader, saturation er hvor stærk farven er (0 saturation giver hvid, 100 saturation giver den fulde x-farve)</li>
+                </ul>
+                <img src="images/Eksempel-billeder/CSS-colors.png" width="1000px" height="350px">
                 </div>
 
                 <button class="accordion">Navigationsbar</button>
                 <div class="panel">
-                <p>monkey</p>    
+                <p>Jeg har (lavet) min navigationsbar sådan her:</p>
+                <img src="images/Eksempel-billeder/CSS-navigationsbar.png" style="width:50%;height:50%">    
                 </div>
 
                 <button class="accordion">Dropdown-menuer</button>
                 <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Attribute Selectors</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Counters</button>
-                <div class="panel">
-                <p>monkey</p>    
+                <p>Min kode for dropdown-menuen er alt for lang til at være i bukserne.</p>
+                <p>Den fungere på samme måde som resten af navigationsbaren, udover at den udfolder sig vertikal. Den eneste måde den rent faktisk skilder sig ud fra navigationsbaren er, at navigationsbarens opacitet er absolut (du ser den hele tiden), men dropdown-menuen er som navnet siger, den hopper ned, når du holder musen over den.</p>    
                 </div>
 
                 <button class="accordion">!important</button>
                 <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Matematik Funktioner</button>
-                <div class="panel">
-                <p>monkey</p>    
+                <p>!important reglen sørger for, at hvis du har en masse betingelser for et objekt, så kan du overwrite dem alle ved at denne kommando du giver <strong>!important</strong> bliver mere vigtig end de andre og derfor også prioteret højere end de andre kommandoer
+                <br>Her kan vi se hvordan den virker:</p>
+                <img src="images/Eksempel-billeder/CSS-!important.png">    
                 </div>
 
                 <!-- Billeder -->
-                <h2>Billeder</h2>
-                <button class="accordion">Klunk</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
                 <button class="accordion">2d & 3d responsive</button>
                 <div class="panel">
-                <p>monkey</p>
-                </div>
-
-                <button class="accordion">Animationer</button>
-                <div class="panel">
-                <p>monkey</p>    
-                </div>
-
-                <button class="accordion">Image reflection</button>
-                <div class="panel">
-                <p>monkey</p>    
+                <p>Man kan lave et objekt i sin kode 2d og/eller 3d responsive, hvilket vil sige, at den reagere på en eller anden fysisk måde, dette kalder man også "at den transformere"</p>
                 </div>
 
                 <button class="accordion">billede dimensioner (object-position)</button>
                 <div class="panel">
-                <p>monkey</p>    
+                <p>Billeder defineres med mange forskellige former og længder, normalt bruger man <strong>px</strong> eller <strong>%</strong> til at bestemme længderne på et objekt, de normale kommandoer til længder er <strong>width, height</strong> & <strong>Depth</strong></p>
                 </div>
 
-                <button class="accordion">Border image</button>
+                <button class="accordion">Borders</button>
                 <div class="panel">
-                <p>monkey</p>    
+                <p>Borders kan laves på en masse forskellige måder, for at definere en border skal du bruge <strong>border-style</strong></p>
+                <img src="images/border-style-types.png">
+                <img src="images/border-style-results.png">
                 </div>
-        </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
